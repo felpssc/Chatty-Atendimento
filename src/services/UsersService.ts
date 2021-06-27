@@ -1,9 +1,10 @@
+import { getCustomRepository } from "typeorm";
 import { User } from "../entities/User";
 import { UsersRepository } from "../repositories/UsersRepository";
 
 class UsersService {
 	async create(email : string):Promise<User> {
-		const usersRepository = new UsersRepository();
+		const usersRepository = getCustomRepository(UsersRepository);
 
 		const userAlreadyExists = await usersRepository.findOne({ email });
 
