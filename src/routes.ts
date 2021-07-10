@@ -11,6 +11,8 @@ const router = Router();
 
 // settings routes
 router.post("/settings", settingController.create);
+router.get("/settings/:username", settingController.findByUsername); 
+router.put("/settings/:username", settingController.update); 
 
 // users routes
 router.post("/users", userController.create);

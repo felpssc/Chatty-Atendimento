@@ -1,8 +1,9 @@
 /* eslint-disable no-mixed-spaces-and-tabs */
-import { PrimaryColumn, Column, CreateDateColumn, ManyToOne, JoinColumn } from "typeorm";
+import { PrimaryColumn, Column, CreateDateColumn, ManyToOne, JoinColumn, Entity } from "typeorm";
 import { User } from "./User";
 import { v4 as uuid } from "uuid";
 
+@Entity("connections")
 class Connection {
   @PrimaryColumn()
   id: string;
