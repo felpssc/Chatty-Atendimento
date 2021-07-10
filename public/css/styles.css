@@ -6,7 +6,7 @@ html {
 }
 
 body {
-  background: #ffffff;
+  background: #121214;
 }
 
 .btn_support {
@@ -104,7 +104,7 @@ body {
 }
 
 .client_message {
-  background: #f2ecfa;
+  background: rgb(18, 18, 20);
   padding: 20px 10px;
   margin: 10px 0;
   width: 250px;
@@ -114,7 +114,7 @@ body {
 }
 
 .client .message {
-  background: #f2ecfa;
+  background: rgb(18, 18, 20);
   /* background: #cecad4; */
   padding: 20px 10px;
   margin: 10px 0;
@@ -155,7 +155,14 @@ body {
   outline: none;
   height: 34px;
   align-items: center;
-  width: 252px;
+  width: 252px;width: 121px;
+  height: 40px;
+
+  background: #8257e6;
+  border-radius: 4px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
 }
 
 .send_message_button {
@@ -173,17 +180,21 @@ body {
   padding-top: 8px;
 }
 
+.text_help span {
+  color: #fff;
+}
+
 .text_help textarea {
   width: 290px;
   height: 115px;
 
   padding: 10px;
 
-  background: #ffffff;
+  background: rgb(18, 18, 20);
   border: 1px solid #dddddd;
   box-sizing: border-box;
   border-radius: 4px;
-
+  color: #fff;
   resize: none;
 }
 
@@ -199,6 +210,8 @@ body {
   border-radius: 4px;
   height: 42px;
   width: 290px;
+  background-color: #121214;
+  color: #fff;
 }
 
 input[type="text"]:focus {
@@ -224,6 +237,14 @@ input[type="text"]:focus {
   border: 0;
   cursor: pointer;
   margin-right: 10px;
+  width: 121px;
+  height: 40px;
+
+  background: gray;
+  border-radius: 4px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
 }
 
 .button {
